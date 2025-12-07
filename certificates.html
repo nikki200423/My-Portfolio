@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Certificates</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #3a3a3a;
+      color: white;
+      padding: 40px 0;
+    }
+
+    .cert-container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px;
+      background: #292929;
+      border-radius: 20px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .title span {
+      color: #f9004d;
+    }
+
+    .cert-card {
+      display: flex;
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      gap: 25px;
+      transition: transform 0.3s ease;
+    }
+
+    .cert-card:hover {
+      transform: scale(1.02);
+    }
+
+    .cert-card img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: contain;
+      border: 2px solid #f9004d;
+    }
+
+    .cert-info {
+      flex: 1;
+    }
+
+    .cert-info h2 {
+      color: #f9004d;
+      margin-bottom: 10px;
+    }
+
+    .cert-info p {
+      margin: 6px 0;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #f9004d;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: transparent;
+      border: 2px solid #f9004d;
+    }
+    #thnx {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 60px;
+      background: linear-gradient(90deg, #bf6880, #b0c268);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+    }
+    #btt{
+      position: relative;
+      left: 880px;
+    }
+
+    /* Animation */
+    @keyframes slideUpFade {
+      0% {
+        opacity: 0;
+        transform: translateY(60px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-up {
+      opacity: 0;
+      animation: slideUpFade 1s ease-out forwards;
+    }
+
+    .delay-0 { animation-delay: 0.1s; }
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+    .delay-4 { animation-delay: 0.8s; }
+    .delay-5 { animation-delay: 1s; }
+    .delay-6 { animation-delay: 1.2s; }
+    .delay-7 { animation-delay: 1.4s; }
+  </style>
+</head>
+<body>
+  <section class="cert-container">
+    <h1 class="title">My <span>Certificates</span></h1>
+
+    
+    <div class="cert-card animate-up delay-0">
+      <img src="./certificates/11.jpg" alt="Infosys Database and SQL Certificate">
+      <div class="cert-info">
+        <h2>Database and SQL</h2>
+        <p><strong>Issued by:</strong> Infosys / Springboard</p>
+        <p><strong>Issued on:</strong> 5 April 2024</p>
+        <p>Successfully completed the "Database and SQL" course, gaining practical knowledge in database management concepts, SQL queries, and data manipulation using relational database systems.</p>
+        <a href="./certificates/11.jpg" target="_blank" class="btn">View Full</a>
+      </div>
+    </div>
+
+    <div class="cert-card animate-up delay-0">
+      <img src="./certificates/10.jpeg" alt="Oracle Certified Foundations Associate">
+      <div class="cert-info">
+        <h2>Oracle Certified Foundations Associate</h2>
+        <p><strong>Issued by:</strong> Oracle</p>
+        <p><strong>Issued on:</strong> 2025</p>
+        <p>Successfully achieved the Oracle Cloud Infrastructure Foundations certification, demonstrating fundamental skills in Oracle Cloud services, core infrastructure concepts, and cloud-based resource management.</p>
+        <a href="./certificates/10.jpeg" target="_blank" class="btn">View Full</a>
+      </div>
+    </div>
+
+    <div class="cert-card animate-up delay-0">
+      <img src="./certificates/09.png" alt="Project Completion Certificate">
+      <div class="cert-info">
+        <h2>Project Completion Certificate</h2>
+        <p><strong>Issued by:</strong> Worisgo / 1stop.ai</p>
+        <p><strong>Issued on:</strong> 19 November 2024</p>
+        <p>Successfully completed the Industrial Program on Web Development Back-End from 1st Oct 2024 to 15th Nov 2024, 
+           including the project "PHP Simple To-Do List" under the guidance of mentor and company representative.</p>
+        <a href="./certificates/09.png" target="_blank" class="btn">View Full</a>
+      </div>
+    </div>
+
+    <div class="cert-card animate-up delay-0">
+      <img src="./certificates/08.png" alt="Certificate of Participation">
+      <div class="cert-info">
+        <h2>Certificate of Participation</h2>
+        <p><strong>Issued by:</strong> Worisgo / 1stop.ai</p>
+        <p><strong>Issued on:</strong> 20 November 2024</p>
+        <p>Participated in the "Web Development Back-End" program from 1st Oct 2024 to 15th Nov 2024 and successfully 
+           completed the program.</p>
+        <a href="./certificates/08.png" target="_blank" class="btn">View Full</a>
+      </div>
+    </div>
+
+    <div class="cert-card animate-up delay-1">
+      <img src="./certificates/01.jpg" alt="Python Bootcamp">
+      <div class="cert-info">
+        <h2>Python Bootcamp</h2>
+        <p><strong>Issued by:</strong> LetsUpgrade</p>
+        <p><strong>Issued on:</strong> 24 March 2025</p>
+        <p>3-day bootcamp focused on Python basics and scripting, in collaboration with NSDC and ITM University.</p>
+        <a href="./certificates/01.jpg" target="_blank" class="btn">View Full</a>
+      </div>
+    </div>
+
+    <div class="cert-card animate-up delay-2">
+      <img src="./certificates/02.jpg" alt="Python Development">
+      <div class="cert-info">
+        <h2>Python Development</h2>
+        <p><strong>Issued by:</strong> Cognifyz Technologies</p>
+        <p>This course covered core Python programming including loops, data structures, and file handling.</p>
+        <a href="./certificates/02.jpg" target="_blank" class="btn">View Full</a>
+      </div>
+    </div>
+
+    <div class="cert-card animate-up delay-3">
+      <img src="./certificates/03.jpg" alt="Data Science">
+      <div class="cert-info">
+        <h2>Data Science</h2>
+        <p><strong>Issued by:</strong> Cognifyz Technologies</p>
+        <p>Introduced data science using Python, data cleaning, NumPy, Pandas, and Matplotlib visualization.</p>
+        <a href="./certificates/03.jpg" target="_blank" class="btn">View Full</a>
+      </div>
+    </div>
+
+    <div class="cert-card animate-up delay-4">
+      <img src="./certificates/04.jpg" alt="Machine Learning">
+      <div class="cert-info">
+        <h2>Machine Learning</h2>
+        <p><strong>Issued by:</strong> Great Learning</p>
+        <p>Covers the foundations of machine learning: supervised/unsupervised models and algorithm overview.</p>
+        <a href="./certificates/04.jpg" target="_blank" class="btn">View Full</a>
+      </div>
+    </div>
+
+    <div class="cert-card animate-up delay-5">
+      <img src="./certificates/05.jpg" alt="Computer Networks">
+      <div class="cert-info">
+        <h2>Basic Computer Networks</h2>
+        <p><strong>Issued by:</strong> Great Learning</p>
+        <p>Fundamentals of networking concepts including protocols, layers, addressing, and transmission control.</p>
+        <a href="./certificates/05.jpg" target="_blank" class="btn">View Full</a>
+      </div>
+    </div>
+
+    <div class="cert-card animate-up delay-6">
+      <img src="./certificates/06.jpg" alt="Java Programming">
+      <div class="cert-info">
+        <h2>Basic Java Programming</h2>
+        <p><strong>Issued by:</strong> Great Learning</p>
+        <p>Introduction to Java syntax, object-oriented programming, conditionals, loops, and basic applications.</p>
+        <a href="./certificates/06.jpg" target="_blank" class="btn">View Full</a>
+      </div>
+    </div>
+
+    <div class="cert-card animate-up delay-7">
+      <img src="./certificates/07.jpg" alt="NLP">
+      <div class="cert-info">
+        <h2>Natural Language Processing</h2>
+        <p><strong>Issued by:</strong> Simple Learn</p>
+        <p>Completed Simplilearn's NLP and Text Mining course, showcasing foundational skills in natural language processing.</p>
+        <a href="./certificates/07.jpg" target="_blank" class="btn">View Full</a>
+      </div>
+    </div>
+
+    <a href="my index.html"><button class="btn" id="btt">Back to HomePage</button></a>
+  </section>
+
+  <h1 id="thnx">Thank You For Watching</h1>
+</body>
+</html>
+

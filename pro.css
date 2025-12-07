@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+	width: 100%;
+  margin: auto;
+  background: #3a3a3a;
+
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title span {
+  color: #f9004d;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #1c1c1c;
+  padding: 25px;
+  width: 1000px;
+  position: relative;
+  left: 150px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+}
+
+.project img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid #f9004d;
+}
+
+.project-desc {
+  flex: 1;
+}
+
+.project-desc h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #f9004d;
+}
+
+.project-desc p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid #f9004d;
+}
+#btt{
+  position: relative;
+  left: 990px;
+}
+
+#thnx {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 60px;
+  background: linear-gradient(90deg, #bf6880, #b0c268);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* === Animation: Slide Up === */
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-up {
+  opacity: 0;
+  animation: slideUpFade 1s ease-out forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 0.10s; }
+.delay-6 { animation-delay: 0.12s; }
+.delay-7 { animation-delay: 0.14s; }
